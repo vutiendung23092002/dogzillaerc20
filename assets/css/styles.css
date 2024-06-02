@@ -1,0 +1,517 @@
+/* reset css */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #f8fcfe;
+    min-height: 100vh;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+@media (min-width: 820px) {
+
+    .navbar-item-rigth {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-item-rigth li {
+        margin: 50px;
+    }
+
+    .banner {
+        height: 600px;
+    }
+
+    .container .content {
+        padding-top: 650px;
+    }
+
+    .content h2 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .more-dogzilla {
+        margin-top: 20px;
+        width: calc(100% - 150px);
+    }
+
+    .token-info {
+        width: calc(100% - 200px);
+        gap: 40px;
+    }
+
+    .token-info .item-info {
+        width: calc(calc(100% - 40px) / 2);
+    }
+
+    .token-info .info-top, .info-btom, .info-betwen{
+        gap: 40px;
+        max-width: 890px;
+    }
+
+    .token-info .info-top {
+        position: relative;
+        left: -5%;
+    }
+
+    .token-info .info-btom {
+        position: relative;
+        right: -5%;
+    }
+
+    .brand-wraper {
+        width: calc(100% - 150px);
+    }
+
+    .brand-wraper .line-bellow {
+        height: 15px;
+    }
+
+    .tokenomic img {
+        width: 60%;
+    }
+
+}
+
+
+@media (max-width: 819.5px) {
+
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .navbar-item-rigth {
+        display: none;
+    }
+
+    .navbar-item-rigth li {
+        margin: 20px;
+    }
+
+    .navbar-item-rigth.show {
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: slideDown 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    }
+
+    #myClose.show {
+        display: block;
+    }
+
+    #myMenu.hidden {
+        display: none !important;
+    }
+
+    .navbar-menu.rotate {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease;
+    }
+
+    .banner {
+        height: 287px;
+    }
+
+    .container .content {
+        padding-top: 320px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .more-dogzilla {
+        margin-top: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .token-info {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .token-info .info-top, .info-btom, .info-betwen{
+        gap: 20px;
+    }
+
+    .brand-wraper {
+        width: 100%;
+    }
+
+
+    .brand-wraper .line-bellow {
+        height: 5px;
+    }
+
+    .tokenomic img {
+        width: 90%;
+    }
+
+    
+    .content-footer {
+        padding-top: 50px;
+    }
+
+    .brand-svg img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.line-bellow {
+    margin: 15px 0 20px 0;
+    display: inline-block;
+    width: 50px;
+    height: 5px;
+    background: #F08B3E;
+    margin: 15px 0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.navbar-list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+a:hover {
+    color: rgb(241, 130, 130);
+    background-color: transparent;
+}
+
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    z-index: 999;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+}
+
+.navbar-close {
+    display: none;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar-list {
+    height: 70px;
+}
+
+.container .banner {
+    position: fixed;
+    top: 10;
+    width: 100%;
+    background-image: url(../image/bannertopo2-1-dogzilla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: height 0.3s ease;
+    z-index: 10;
+}
+
+.container {
+    flex: 1;
+}
+
+.container .content {
+    width: calc(100%-20px);
+    color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content .more-dogzilla {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.05);
+}
+
+.more-dogzilla h5 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.token-info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: url(../image/simple-lines.svg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.token-info .item-info {
+    margin: 0 auto;
+    width: 40%;
+    color: #699eb9;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.05);
+}
+
+.token-info .info-top, .info-btom, .info-betwen{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* ************************************************************************************************************** */
+
+.brand-wraper {
+    position: relative;
+    height: auto;
+    margin-top: 40px;
+    background: linear-gradient(180deg, #0B2E50 0%, #062646 100%);
+    border-radius: 20px;
+    color: white;
+    padding: 45px 10px;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.brand-wraper .brand-svg {
+    margin: 0 auto;
+}
+
+.brand-wraper .line-bellow {
+    margin: 15px 0 20px 0;
+    display: inline-block;
+    width: 50px;
+    background: #F08B3E;
+    margin: 15px 0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+/* ************************************************************************************************************* */
+
+/* Tokenomic */
+
+.tokenomic {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tokenomic img {
+    height: auto;
+    border-radius: inherit;
+}
+
+
+/* ***************************************************************************************************************** */
+.footer {
+    position: relative;
+    margin-top: 50px;
+}
+
+.content-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    position: absolute;
+    margin-top: 60px;
+    width: 100%;
+}
